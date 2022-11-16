@@ -16,7 +16,7 @@ export const FIND_CREATED = "FIND_CREATED";
 //Action para traer todos los videojuegos.
 export const getAllVideogames= ()=>{
         return async(dispatch)=>{
-            const response = await axios.get('http://localhost:3001/videogames');
+            const response = await axios.get('/videogames');
             const data = response.data;
             dispatch({type: GET_ALL_VIDEOGAMES, payload: data});
                 };
@@ -25,7 +25,7 @@ export const getAllVideogames= ()=>{
 //Action para traer la descripcion de un juego en específico.
 export const getVideogameDetails=(id)=>{
     return async(dispatch)=>{
-        const response= await axios.get(`http://localhost:3001/videogames/${id}`);
+        const response= await axios.get(`/videogames/${id}`);
         const data= response.data;
         dispatch({type: GET_VIDEOGAME_DETAILS, payload:data})
     }
@@ -39,7 +39,7 @@ export const clearVideogameDetails=()=>{
 //Action para traer la lista de géneros.
 export const getGenres=()=>{
     return async(dispatch)=>{
-        const response1= await axios.get(`http://localhost:3001/genres`);
+        const response1= await axios.get(`/genres`);
         const data1= response1.data;
         dispatch({type: GET_GENRES, payload:data1})
     };
@@ -48,7 +48,7 @@ export const getGenres=()=>{
 //Action para traer un filtrado de videojuegos por género pasado por params.
 export const getVideogamesByGenre=(genero)=>{
     return async(dispatch)=>{
-        const response= await axios.get(`http://localhost:3001/genres/${genero}`);
+        const response= await axios.get(`/genres/${genero}`);
         const data= response.data;
         dispatch({type: GET_VIDEOGAMES_BY_GENRE, payload:data})
     }
@@ -59,7 +59,7 @@ export const searchVideogames= (name)=>{
 
     return async(dispatch)=>{
         try{
-            const response = await axios.get(`http://localhost:3001/videogames?name=${name}`);
+            const response = await axios.get(`/videogames?name=${name}`);
             const data = response.data;
             dispatch({type: SEARCH_VIDEOGAMES, payload: data});
         }catch(err){
@@ -72,7 +72,7 @@ export const searchVideogames= (name)=>{
 export const alphabeticalSort = (value)=>{
     return async(dispatch)=>{
         try{
-            const response = await axios.get('http://localhost:3001/videogames');
+            const response = await axios.get('/videogames');
             const data = response.data;
             if(value == "AtoZ"){
                 data.sort((game1, game2)=>{
