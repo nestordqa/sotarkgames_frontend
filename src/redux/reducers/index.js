@@ -49,7 +49,7 @@ const rootReducer = (state = initialState, action) => {
         return{...state, videogames: action.payload}
 
       case FIND_CREATED:
-        return{...state, videogames: state.videogames.filter(game=>game.Created==true)}
+        return{...state, videogames: state.videogames.filter(game=>game.Created===true)}
 
       default: return state;
       

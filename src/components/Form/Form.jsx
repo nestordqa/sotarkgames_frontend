@@ -46,14 +46,11 @@ function validate(obj){
                 return error;
         }
 
-
-let stateVideogames = useSelector(state=>state.videogames); //Traigo el State que necesito de la store
-
 const dispatch = useDispatch(); //Creo el dispatch
 
 function handleChange(e){
         setErrores(validate(videogames));
-        Object.keys(errores).length == 0 ? setBotonErr(false):setBotonErr(true);
+        Object.keys(errores).length === 0 ? setBotonErr(false):setBotonErr(true);
         setVideogames({
                 ...videogames, //Pushea al obj solo lo que se indique segun sea el input
                 [e.target.name]:e.target.value

@@ -1,4 +1,3 @@
-import react from 'react';
 import FinalNavBar from '../components/FinalNavBar.jsx'
 import Cards from '../components/Cards/Cards.jsx'
 import { useState, useEffect } from 'react';

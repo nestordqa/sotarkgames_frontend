@@ -74,7 +74,7 @@ export const alphabeticalSort = (value)=>{
         try{
             const response = await axios.get('/videogames');
             const data = response.data;
-            if(value == "AtoZ"){
+            if(value === "AtoZ"){
                 data.sort((game1, game2)=>{
                     if(game1.Nombre < game2.Nombre){
                         return -1;
@@ -85,7 +85,7 @@ export const alphabeticalSort = (value)=>{
                     }            
                 }) 
                 dispatch({type: ALPHABETICAL_SORT, payload: data});              
-            }else if(value == "ZtoA"){
+            }else if(value === "ZtoA"){
                 data.sort((game1, game2)=>{
                     if(game1.Nombre < game2.Nombre){
                         return 1;
@@ -109,7 +109,7 @@ export const ratingSort = (value)=>{
         try{
             const response = await axios.get('http://localhost:3001/videogames');
             const data = response.data;
-            if(value == "Better"){
+            if(value === "Better"){
                 data.sort((game1, game2)=>{
                     if(game1.Rating < game2.Rating){
                         return 1;
@@ -120,7 +120,7 @@ export const ratingSort = (value)=>{
                     }            
                 }) 
                 dispatch({type: RATING_SORT, payload: data});              
-            }else if(value == "Lower"){
+            }else if(value === "Lower"){
                 data.sort((game1, game2)=>{
                     if(game1.Rating < game2.Rating){
                         return -1;
