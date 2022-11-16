@@ -1,0 +1,6 @@
+.containerFinal{
+    background: rgb(150,0,158);
+    background: linear-gradient(90deg, rgba(150,0,158,1) 0%, rgba(112,101,0,1) 84%);
+/* position: fixed; */
+width: 100%;
+}

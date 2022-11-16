@@ -1,0 +1,34 @@
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.buscador{
+    background-color: transparent;
+    padding:5px;
+    font-size: 15px;
+    padding-right: 0;
+    width: 100px;
+    font-family: monospace;
+    letter-spacing: -1px;
+    color: white;
+    border-style: none;
+    border-bottom: 1px white solid;
+    border-left: 1px white solid;
+    padding-left: 15px;
+
+
+
+}
+.botonBuscador{
+    
+    padding:5px;
+    font-size: 15px;
+    font-family: monospace;
+    letter-spacing: -1px;
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+    background-color:rgb(117, 117, 117, 0.5);
+    margin-left: 10px;
+}

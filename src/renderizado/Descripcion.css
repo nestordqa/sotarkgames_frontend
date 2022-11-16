@@ -1,0 +1,83 @@
+.descriptionContainer{
+    padding-top:15px;
+    background-color: rgba(40, 40, 40, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    font-size: 12px;
+    color: white;
+}
+
+.containerImg{
+    height: 300px;
+    padding: 10px;
+    text-align:center
+
+}
+.imgGame{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: center;
+    border: solid white 1px;
+
+}
+.containerNombre,
+.containerFecha,
+.containerRating,
+.containerPlataformas,
+.containerGeneros{
+    text-align: center;
+    font-family: monospace;
+    padding-top: 2px;
+    margin-bottom: 1px white solid;
+}
+.containerDescripcion{
+    padding-top: 15px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+textarea{
+    max-width: 500px;
+    min-width: 500px;
+    min-height: 300px;
+    max-height: 300px;
+    padding: 10px;
+    background-color: rgb(156, 0, 148, 0.5);
+    color: white;
+    font-weight: bolder;
+    border: white 0.5px solid;
+    border-radius: 15px;
+}
+
+.volver{
+    padding-top:15px;
+    padding-left: 25px;
+}
+
+button {
+    font-family: inherit;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+    padding: 9px 20px;
+    border: 1px solid grey;
+    border-radius: 1000px;
+    background: transparent;
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  button:focus {
+    color: rgb(151, 0, 126);
+    background: rgba(40, 40, 40, 0.5);
+    border-color: currentColor;
+  }
+  
+  button:active {
+    transform: translate(2px);
+  }

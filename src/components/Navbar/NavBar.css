@@ -1,0 +1,131 @@
+
+  
+  .containerSuper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 440px;
+    justify-content: center;
+    height: 30px;
+    /* position: fixed;
+    z-index: 5000; */
+    }
+  .containerMenu{
+    height: 100%;
+
+  }
+
+  .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    font-family: monospace;
+    
+  }
+  
+  .nav-container {
+    display: flex;
+    /* justify-content: space-around; */
+    align-items:center;
+    width: 100%;
+    height: 100%;
+  }
+  .logoContainer{
+    display: flex;
+    flex-direction: row;
+    width: 200px;    
+  }
+  
+  .nav-logo {
+    color: #ffffff;
+    width: 158px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    flex-grow: 1;
+    letter-spacing: -2px;
+    font-weight: bolder;
+    padding-left: 10px;
+  }
+  
+  .nav-menu1 {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;    
+    list-style: none;
+    text-align: center;
+    width: 100%;    
+    
+  }
+  
+  .nav-links {
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: 15px; */
+    font-size: 15px;
+    }
+  
+  .nav-item {
+    line-height: 18px;
+    /* margin-right: 1rem; */
+    width: max-content;
+  }
+  
+  .nav-item:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width 0.3s ease, background-color 0.5s ease;
+  }
+  
+  .nav-item:hover:after {
+    width: 100%;
+    background: #fcfcfc;
+  }
+  
+  .nav-item.active {
+    color: #fcfcfc;
+    border: 1px solid #fcfcfc;
+  }
+  .searchBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.buscador{
+    background-color: transparent;
+    padding:5px;
+    font-size: 15px;
+    padding-right: 0;
+    width: 100px;
+    font-family: monospace;
+    letter-spacing: -1px;
+    color: white;
+    border-style: none;
+    border-bottom: 1px white solid;
+    border-left: 1px white solid;
+    padding-left: 15px;
+
+
+
+}
+.botonBuscador{
+    
+    padding:5px;
+    font-size: 15px;
+    font-family: monospace;
+    letter-spacing: -1px;
+    color: white;
+    border: white 1px solid;
+    border-radius: 5px;
+    background-color:rgb(117, 117, 117, 0.5);
+    margin-left: 10px;
+}
+  
+  
+
+

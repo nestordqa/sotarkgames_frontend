@@ -1,0 +1,41 @@
+.genreSelector{
+    background-color: transparent;
+    padding:3px;
+    font-size: 15px;
+    width: 110px;
+    font-family: monospace;
+    letter-spacing: -1px;
+    color: white;
+    border-style: none;
+    border: 1px white solid;
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    
+}
+.genreFilter {
+  text-align: left;
+  padding: 5px;
+  font-family: monospace;
+}
+.genreFilter select{
+  text-align: left;
+  border-radius: 8px;
+  border: solid white 1.5px;
+  background-color: transparent;
+  font-family: monospace;  
+  transition: 0.5s;
+  color: white;  
+}
+.genreFilter select:hover{
+  text-align: left;
+  border: solid rgb(152, 1, 117) 1px;
+  background-color: rgb(49, 49, 49);
+  font-family: monospace;    
+}
+.genreFilter select:focus{
+  text-align: left;
+  border: solid rgb(152, 1, 117) 1px;
+  background-color: rgb(49, 49, 49);
+  font-family: monospace;    
+}

@@ -1,0 +1,14 @@
+
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 400px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 400px;
+
+}
+.cards{
+
+}

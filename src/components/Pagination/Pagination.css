@@ -1,0 +1,15 @@
+.containerPagination{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    background: rgb(150,0,158);
+    background: linear-gradient(90deg, rgba(150,0,158,1) 0%, rgba(112,101,0,1) 84%);
+    width: 100%;
+    padding-bottom: 5px;
+    
+}
+/* .numberPagination{
+    background: rgb(150,0,158);
+    background: linear-gradient(90deg, rgba(150,0,158,1) 0%, rgba(112,101,0,1) 84%);
+} */
