@@ -9,7 +9,7 @@ export default function AllCards(){
     //Declaro un state por la página que debe renderizarse
     const [currentPage, setCurrentPage]=useState(1);
     //Declaro un state que me indique cuántas cards deben renderizarse por página.
-    const[postPerPage, setPostPerPage] = useState(15);
+    const[postPerPage] = useState(15);
 
     //Paso toda la data necesaria por props al componente cards, de tal manera desde éste componente
     //puedo hacer slice al arr que contiene todos los videojuegos y hacer la paginación.
