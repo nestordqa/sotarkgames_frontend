@@ -120,8 +120,8 @@ return(
                                 <div className="formChild">                             
                                         <select onChange={(e)=>handleClickGenre(e)} name="Selector" className="genreSelector">
                                                 <option value="">Select genres...</option>      
-                                                {genres.map(genero=>{
-                                                return(<option value={genero.Nombre}>{genero.Nombre}</option>
+                                                {genres.map((genero, index)=>{
+                                                return(<option value={genero.Nombre} key={index}>{genero.Nombre}</option>
                                                 )
                                                 })}                    
                                         </select>
@@ -130,7 +130,7 @@ return(
 
                                 <div className="formChild">
                                         <select onChange={(e)=>handleClickPlatform(e)} name="Plataformas" className="genreSelector">
-                                                <option value="" selected>Select platforms...</option>
+                                                <option value="">Select platforms...</option>
                                                 <option value="PC">PC</option>
                                                 <option value="Playstation">Playstation</option>
                                                 <option value="Xbox">Xbox</option>
