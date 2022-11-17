@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 export default function Card(props){  
         var plataformas = props.Plataformas.map(item=>" "+item);
-        var generosMap = props.genre.map(item=>" "+item);
+        var generosMap = props.Generos.map(item=>" "+item);
 
 
         let description = useSelector(state=>state.descriptions); //Traigo el State que necesito de la store

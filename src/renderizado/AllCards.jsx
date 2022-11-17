@@ -18,8 +18,7 @@ export default function AllCards(){
     useEffect(()=>{
         dispatch(getAllVideogames()); //Hago el dispatch de la Action importada
     }, [dispatch]);
-    console.log(stateVideogames);
-
+    
     const lastPostIndex = currentPage * postPerPage;
     const firstPostIndex = lastPostIndex - postPerPage;
     const currentPost = stateVideogames.slice(firstPostIndex, lastPostIndex);

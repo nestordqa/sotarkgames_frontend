@@ -14,7 +14,7 @@ export default function Cards({videogamesData}){
                                 Fecha_lanzamiento={game.Fecha_lanzamiento}
                                 Plataformas={game.Plataformas}
                                 Img_URL={game.Img_URL}
-                                genre={game.Generos}
+                                Generos={game.Generos}
                                 Rating={game.Rating}
                                 Id={game.Id}
                                 
