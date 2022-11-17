@@ -15,7 +15,7 @@ const dispatch = useDispatch();
 const handleClickClear = (e)=>{
     e.preventDefault();
     dispatch(clearVideogameDetails());
-    console.log("Description limpia", description)
+    
 }
 
     return(
