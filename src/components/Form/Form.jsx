@@ -93,13 +93,6 @@ function handleClickPlatform(e){
         console.log(videogames);
 }
 
-function handleChangeLike(e){
-        e.preventDefault();
-        setVideogames({...videogames, Like: e.target.value});
-        console.log("NUEVO INPUT", videogames);
-}
-
-
 
 return(
 
@@ -133,15 +126,6 @@ return(
                                                 })}                    
                                         </select>
                                         {errores.Generos ? <h5>{errores.Generos}</h5>:false}                             
-                                </div>
-
-                                <div className="formChild">                             
-                                        <select onChange={(e)=>handleChangeLike(e)} name="Selector" className="genreSelector">
-                                                <option value="">Select like...</option>      
-                                                <option value={true}>Me gusta</option>
-                                                <option value={false}>Unlike</option>
-                                        </select>
-                                                                     
                                 </div>
 
                                 <div className="formChild">
