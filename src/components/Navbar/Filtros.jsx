@@ -81,7 +81,7 @@ export default function Filtros(){
                   <div className="genreFilter">
                     <select name="selector" onChange={(e)=>handleChangeAlphabetical(e)} className="genreSelector">
 
-                      <option value="" selected>Alphabetically sort...</option>
+                      <option value="">Alphabetically sort...</option>
                       <option value="AtoZ">A-Z</option>
                       <option value="ZtoA">Z-A</option>
                     
@@ -91,7 +91,7 @@ export default function Filtros(){
                   <div className="genreFilter">
                     <select name="selector" onChange={(e)=>handleChangeRating(e)} className="genreSelector">
 
-                      <option value="" selected>Rating sort...</option>
+                      <option value="">Rating sort...</option>
                       <option value="Better">+Rating</option>
                       <option value="Lower">-Rating</option>
                     
