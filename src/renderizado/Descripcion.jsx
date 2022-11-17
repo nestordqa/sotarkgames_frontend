@@ -8,8 +8,8 @@ import './Descripcion.css';
 export default function Descripcion(){
     let description = useSelector(state=>state.descriptions);
 
-    var plataformas = description.Plataformas.map(item=>" "+item);
-    var generosMap = description.Generos.map(item=>" "+item);
+    // var plataformas = description.Plataformas.map(item=>" "+item);
+    // var generosMap = description.Generos.map(item=>" "+item);
 
 const dispatch = useDispatch();
 const handleClickClear = (e)=>{
@@ -18,8 +18,8 @@ const handleClickClear = (e)=>{
     console.log("Description limpia", description)
 }
 
-    console.log(description);
-    console.log(description.Nombre);
+    // console.log(description);
+    // console.log(description.Nombre);
     return(
         <div className = "descriptionContainer">
             {!Array.isArray(description) ? (
@@ -43,10 +43,10 @@ const handleClickClear = (e)=>{
                 <h2>Rating: {description.Rating}/5</h2>
             </div>
             <div className="containerPlataformas">
-                <h2>Platforms: {plataformas}</h2>
+                <h2>Platforms: Hola</h2>
             </div>
             <div className="containerGeneros">
-                <h2>Genres: {generosMap}</h2>
+                <h2>Genres: Chao</h2>
             </div>
             <div className="containerDescripcion">
                 <textarea>
