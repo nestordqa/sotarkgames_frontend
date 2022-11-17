@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import FinalNavBar from '../components/FinalNavBar';
 import LoadingModule from '../components/LoadingModule/LoadingModule';
 import { clearVideogameDetails } from '../redux/actions';
 import './Descripcion.css';
@@ -19,6 +20,8 @@ const handleClickClear = (e)=>{
 }
 
     return(
+        <>
+        <FinalNavBar/>
         <div className = "descriptionContainer">
             {!Array.isArray(description) ? (
                 <div>
@@ -55,5 +58,6 @@ const handleClickClear = (e)=>{
             ) : (<LoadingModule/>)}
 
         </div>
+        </>
     )
 }
