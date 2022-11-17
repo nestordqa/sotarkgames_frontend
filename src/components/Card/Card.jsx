@@ -13,6 +13,7 @@ export default function Card(props){
         const dispatch = useDispatch(); //Creo el dispatch
         let handleClickDetails = (e)=>{
                 e.preventDefault();
+                console.log(props.Id)
                 dispatch(getVideogameDetails(props.Id))
                 console.log("DESCRIPCION DEL VIDEOJUEGO",description); //Verifico que me traiga la description
               };
