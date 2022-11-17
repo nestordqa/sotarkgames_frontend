@@ -26,9 +26,9 @@ import {useEffect} from 'react';
                 <div className="genreFilter">
                         
                         <select onChange={(e)=>handleClickGenre(e)} name="Selector" className="genreSelector">
-                         <option value="all" selected>Filter by genre...</option>       
-                        {stateGenres.map(genero=>{
-                                return(<option value={genero.Nombre}>{genero.Nombre}</option>
+                         <option value="all">Filter by genre...</option>       
+                        {stateGenres.map((genero, index)=>{
+                                return(<option value={genero.Nombre} key ={index}>{genero.Nombre}</option>
                                 )
                         })}                    
                         </select>                        
